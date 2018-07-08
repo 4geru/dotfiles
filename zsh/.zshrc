@@ -37,19 +37,3 @@ export GREP_OPTIONS='--color=auto'
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-
-alias be="bundle exec"
-alias el="exec $SHELL"
-alias ua="git add"
-alias ub="git branch"
-alias uc="git commit"
-alias uck="git checkout"
-alias ud="git diff"
-alias uf="git fetch"
-alias ul="git log"
-alias ug="git grep"
-alias up="git pull"
-alias uh="git push"
-alias uls="git ls-files"
-alias us="git status"
-alias ush="git stash"
