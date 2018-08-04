@@ -1,3 +1,8 @@
+alias d="docker"
+alias dls="docker container ls"
+alias dlsa="docker container ls -a"
+alias de="docker exec -it"
+alias dc="docker container"
 alias be="bundle exec"
 alias b="bundle"
 alias el="exec $SHELL"
