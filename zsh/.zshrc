@@ -3,9 +3,13 @@
 # pokemon torchic
 
 # rbenv
-export PATH=/usr/local/bin:$PATH
-PATH=$HOME/.rbenv/bin:$PATH
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+#export PATH=/usr/local/bin:$PATH
+#PATH=$HOME/.rbenv/bin:$PATH
+#if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+#eval "$(rbenv init -)"
+export PATH="~/.rbenv/shims:/usr/local/bin:$PATH"
+eval "$(rbenv init -)"
+
 
 # nodenv
 export PATH="$HOME/.ndenv/bin:$PATH"
