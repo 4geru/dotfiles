@@ -5,4 +5,5 @@ set softtabstop=2
 set autoindent
 set smartindent
 
-autocmd BufNewFile *.cpp 0r ~/dotfiles/templates/cpp.txt
+" for template
+autocmd BufNewFile *.cpp 0r $HOME/dotfiles/templates/cpp.txt
