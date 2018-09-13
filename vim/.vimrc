@@ -29,12 +29,16 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
 
-call neobundle#end()
+" [plugin] file search
+NeoBundle "ctrlpvim/ctrlp.vim"
 
+" [plugin] formatter
+NeoBundle "ruby-formatter/rufo-vim"
+
+call neobundle#end()
+execute pathogen#infect()
 " Required:
 filetype plugin indent on
-
-NeoBundle "ctrlpvim/ctrlp.vim"
 
 
 " Enable rufo (RUby FOrmat)
