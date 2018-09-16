@@ -4,6 +4,8 @@ set shiftwidth=2
 set softtabstop=2
 set autoindent
 set smartindent
+set number
+
 
 " for template
 autocmd BufNewFile *.cpp 0r $HOME/dotfiles/templates/cpp.txt
