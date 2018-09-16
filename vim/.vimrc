@@ -37,6 +37,12 @@ NeoBundle "ctrlpvim/ctrlp.vim"
 " [plugin] formatter
 NeoBundle "ruby-formatter/rufo-vim"
 
+" [plugin] suggest
+NeoBundle "Shougo/neocomplete.vim"
+
+" [plugin] slim
+NeoBundle 'slim-template/vim-slim'
+
 call neobundle#end()
 execute pathogen#infect()
 " Required:
