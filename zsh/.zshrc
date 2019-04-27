@@ -12,8 +12,7 @@ eval "$(rbenv init -)"
 
 
 # nodenv
-export PATH="$HOME/.ndenv/bin:$PATH"
-eval "$(ndenv init -)"
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # direnv
 eval "$(direnv hook zsh)"
@@ -25,9 +24,6 @@ ZSHHOME="${HOME}/dotfiles/zsh/.zsh.d"
 eval $(ssh-agent) 
 ssh-add ~/.ssh/github
 
-# sublime
-ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
-
 if [ -d $ZSHHOME -a -r $ZSHHOME -a \
      -x $ZSHHOME ]; then
     for i in $ZSHHOME/*; do
@@ -36,8 +32,20 @@ if [ -d $ZSHHOME -a -r $ZSHHOME -a \
     done
 fi
 
+# yarn
+export PATH=$HOME/.yarn/bin:$PATH
+
 # grep option
 export GREP_OPTIONS='--color=auto' 
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# for Postgres
+export PGDATA=/usr/local/var/postgres
+
+
+export PATH=/Library/Frameworks/Python.framework/Versions/3.X/bin:$PATH
+export PATH="$HOME/.pyenv/shims:$PATH"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
