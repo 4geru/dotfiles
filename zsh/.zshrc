@@ -1,12 +1,4 @@
-# pokemon terminal
-# PATH=$HOME/.rbenv/shims:/usr/local/bin:$HOME/.Pokemon-Terminal:/usr/local/bin:/usr/bin:/bin:/usr/sbin
-# pokemon torchic
-
 # rbenv
-#export PATH=/usr/local/bin:$PATH
-#PATH=$HOME/.rbenv/bin:$PATH
-#if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-#eval "$(rbenv init -)"
 export PATH="~/.rbenv/shims:/usr/local/bin:$PATH"
 eval "$(rbenv init -)"
 
