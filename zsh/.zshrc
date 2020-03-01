@@ -41,3 +41,15 @@ export PATH=/Library/Frameworks/Python.framework/Versions/3.X/bin:$PATH
 export PATH="$HOME/.pyenv/shims:$PATH"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# Add Visual Studio Code (code)
+function code {
+    if [[ $# = 0 ]]
+    then
+        open -a "Visual Studio Code"
+    else
+        local argPath="$1"
+        [[ $1 = /* ]] && argPath="$1" || argPath="$PWD/${1#./}"
+        open -a "Visual Studio Code" "$argPath"
+    fi
+}
