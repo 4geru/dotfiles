@@ -2,15 +2,20 @@
 export PATH="~/.rbenv/shims:/usr/local/bin:$PATH"
 eval "$(rbenv init -)"
 
-
 # nodenv
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
 
 # direnv
 eval "$(direnv hook zsh)"
 
 # zsh files
 ZSHHOME="${HOME}/dotfiles/zsh/.zsh.d"
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 # github
 eval $(ssh-agent) 
